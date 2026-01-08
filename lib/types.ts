@@ -1,3 +1,5 @@
+import type { JWTPayload } from "jose";
+
 export type UserRole = "ADMIN" | "MEMBER";
 
 export interface User {
@@ -88,10 +90,10 @@ export interface AnatomyContent {
   isPremium: boolean;
 }
 
-export interface SessionPayload {
+export interface SessionPayload extends JWTPayload {
   userId: string;
   role: UserRole;
   isPremium: boolean;
-  exp: number;
+  exp?: number;
 }
 
