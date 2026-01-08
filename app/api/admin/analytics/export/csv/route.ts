@@ -4,7 +4,7 @@ import { verifySessionToken } from "@/lib/auth";
 import { getAnalytics } from "@/lib/db";
 
 export async function GET() {
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const session = cookieStore.get("adlib_session")?.value;
   const payload = session ? await verifySessionToken(session) : null;
   if (!payload || payload.role !== "ADMIN") {
