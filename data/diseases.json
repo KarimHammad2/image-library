@@ -1,0 +1,48 @@
+[
+  {
+    "id": "fmd",
+    "name": "Foot-and-Mouth Disease",
+    "description": "Highly contagious viral disease causing vesicles in cloven-hoofed animals.",
+    "relevance": "Critical for trade and biosecurity monitoring.",
+    "notifiableStatus": "NOTIFIABLE",
+    "species": ["Cattle", "Sheep", "Goats", "Pigs"],
+    "geographicalIncidence": "Endemic pockets globally; close surveillance in border regions."
+  },
+  {
+    "id": "brd",
+    "name": "Bovine Respiratory Disease",
+    "description": "Multifactorial respiratory syndrome impacting feedlot performance.",
+    "relevance": "Major economic losses in beef and dairy systems.",
+    "notifiableStatus": "NON_NOTIFIABLE",
+    "species": ["Cattle"],
+    "geographicalIncidence": "Global; higher incidence in intensive production."
+  },
+  {
+    "id": "mastitis",
+    "name": "Mastitis",
+    "description": "Inflammation of the udder typically due to bacterial infection.",
+    "relevance": "Impacts milk quality and animal welfare.",
+    "notifiableStatus": "NON_NOTIFIABLE",
+    "species": ["Cattle", "Sheep", "Goats"],
+    "geographicalIncidence": "Global."
+  },
+  {
+    "id": "asf",
+    "name": "African Swine Fever",
+    "description": "Severe viral hemorrhagic disease of pigs with high mortality.",
+    "relevance": "Transboundary threat; requires strict containment.",
+    "notifiableStatus": "EAD",
+    "species": ["Pigs"],
+    "geographicalIncidence": "Multiple outbreaks in Europe, Asia, Africa."
+  },
+  {
+    "id": "ai",
+    "name": "Avian Influenza (HPAI)",
+    "description": "Highly pathogenic avian influenza causing respiratory and systemic signs.",
+    "relevance": "Zoonotic risk and major production losses.",
+    "notifiableStatus": "EAD",
+    "species": ["Poultry", "Wild Birds"],
+    "geographicalIncidence": "Global seasonal incursions."
+  }
+]
+

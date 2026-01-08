@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Animal Disease / Defect Image Library (Demo)
 
-## Getting Started
+Next.js 16 (App Router, TypeScript) demo with Tailwind + shadcn/ui, custom JWT auth, JSON-backed storage, premium gating, and admin console.
 
-First, run the development server:
-
+### Quick start
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Default accounts
+- Admin: `admin@example.com` / `Admin123!` (can toggle premium + roles)
+- Members: `member@example.com` / `Member123!`, `premium@example.com` / `Premium123!`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Data storage
+Local JSON files in `/data` act as the database:
+- `users.json`, `images.json`, `diseases.json`, `analytics.json`, `quizzes.json`, `anatomy_content.json`
+- Demo images live in `/public/demo-images/*`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Stack
+- Next.js 16 App Router, TypeScript
+- Tailwind CSS + shadcn/ui components
+- Custom auth with JWT in HTTP-only cookies (`adlib_session`, HS256 via `lib/auth.ts`)
+- File-based CRUD helpers in `lib/db.ts`; analytics logger in `lib/analytics.ts`
 
-## Learn More
+### Features
+- Public landing + auth (login/signup)
+- Member: library with faceted search, image detail + disease card, comparison view, premium dashboard (quizzes, anatomy/PDF/video links)
+- Premium gating: `isPremium` flag on the user model (no real payments)
+- Admin: dashboard, image metadata CRUD + approval, disease CRUD, user role/premium toggles, analytics table + CSV/JSON export
+- Analytics events for login, image views, searches/filters, comparisons, quiz start/complete, premium content views
 
-To learn more about Next.js, take a look at the following resources:
+### Important paths
+- Landing/auth: `app/(public)/*`
+- Member area: `app/(member)/library`, `/compare`, `/premium/*`
+- Admin: `app/(admin)/admin/*`
+- Middleware guards member/admin routes in `middleware.ts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Limitations / notes
+- No real uploads: image selection is by filename pointing at `/public/demo-images`.
+- No external DB or payment gateway; JSON writes are best-effort and not concurrent-safe for production.
+- Auth is demo-grade (HS256 shared secret, SHA-256 password hash).
+- Analytics is append-only JSON; clear the file to reset.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Scripts
+- `npm run dev` - start dev server
+- `npm run build` - production build
+- `npm run start` - start compiled app
+- `npm run lint` - ESLint

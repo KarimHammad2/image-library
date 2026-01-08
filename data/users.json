@@ -1,0 +1,30 @@
+[
+  {
+    "id": "user-admin-1",
+    "email": "admin@example.com",
+    "passwordHash": "3eb3fe66b31e3b4d10fa70b5cad49c7112294af6ae4e476a1c405155d45aa121",
+    "name": "Dr. Admin",
+    "role": "ADMIN",
+    "isPremium": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-member-1",
+    "email": "member@example.com",
+    "passwordHash": "775d1eb39fca9787ac5b6559eebe00d965bc24fae3b22794d6388070e0b59763",
+    "name": "Dr. Member",
+    "role": "MEMBER",
+    "isPremium": false,
+    "createdAt": "2024-02-15T00:00:00.000Z"
+  },
+  {
+    "id": "user-premium-1",
+    "email": "premium@example.com",
+    "passwordHash": "6f4c0506c19c0ca4b3976fffb59d1723a6d8946ee6d2e015676a968ab9e5506b",
+    "name": "Dr. Premium",
+    "role": "MEMBER",
+    "isPremium": true,
+    "createdAt": "2024-03-10T00:00:00.000Z"
+  }
+]
+

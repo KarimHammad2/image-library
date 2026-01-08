@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rumen-video",
+    "title": "Rumen Anatomy Walkthrough",
+    "description": "Premium video covering key rumen landmarks for field necropsy.",
+    "type": "VIDEO",
+    "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "isPremium": true
+  },
+  {
+    "id": "hoof-care-pdf",
+    "title": "Hoof Care Illustrated Guide",
+    "description": "PDF guide for routine hoof trimming and lesion scoring.",
+    "type": "PDF",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "isPremium": false
+  },
+  {
+    "id": "avian-air-sacs",
+    "title": "Avian Air Sacs - Quick Notes",
+    "description": "Article on common lesions in avian respiratory tract.",
+    "type": "ARTICLE",
+    "isPremium": true
+  }
+]
+

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "quiz-bovine-basics",
+    "title": "Bovine Respiratory Basics",
+    "description": "Identify key lesions and management choices for BRD.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionType": "MCQ",
+        "questionText": "What is the most common lobe affected early in BRD cases?",
+        "options": ["Caudal lobes", "Cranio-ventral lobes", "Accessory lobe", "Diffuse"],
+        "correctOptionIndex": 1
+      },
+      {
+        "id": "q2",
+        "questionType": "IMAGE_RECOGNITION",
+        "questionText": "Select the diagnosis that matches this lung image.",
+        "imageId": "img-brd-lung",
+        "options": [
+          "Bovine Respiratory Disease complex",
+          "Pulmonary edema",
+          "Verminous pneumonia",
+          "Normal lung"
+        ],
+        "correctOptionIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "quiz-swine-premium",
+    "title": "Swine ASF Awareness",
+    "description": "Premium drill on ASF recognition and response steps.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionType": "MCQ",
+        "questionText": "Which control action is prioritized first during suspected ASF?",
+        "options": [
+          "Immediate depopulation",
+          "Movement standstill and notification",
+          "Prophylactic antibiotics",
+          "Vaccination"
+        ],
+        "correctOptionIndex": 1
+      },
+      {
+        "id": "q2",
+        "questionType": "IMAGE_RECOGNITION",
+        "questionText": "Match this spleen image to the likely diagnosis.",
+        "imageId": "img-asf-spleen",
+        "options": [
+          "Classical Swine Fever",
+          "Porcine Reproductive and Respiratory Syndrome",
+          "African Swine Fever",
+          "Salmonellosis"
+        ],
+        "correctOptionIndex": 2
+      }
+    ]
+  }
+]
+

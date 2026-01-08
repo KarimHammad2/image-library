@@ -1,0 +1,145 @@
+[
+  {
+    "id": "0ace4182-0315-48d6-8e41-a3a2acb45d1f",
+    "type": "LOGIN",
+    "userId": "user-admin-1",
+    "timestamp": "2026-01-08T12:31:37.989Z"
+  },
+  {
+    "id": "01be3fba-238d-4ca7-9b6b-28d065998bea",
+    "type": "LOGIN",
+    "userId": "user-admin-1",
+    "timestamp": "2026-01-08T12:34:27.758Z"
+  },
+  {
+    "id": "fe3c93ef-8f94-477a-88f4-c39ddb9e0dc0",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-brd-lung",
+      "right": "img-mastitis-udder"
+    },
+    "timestamp": "2026-01-08T12:43:20.720Z"
+  },
+  {
+    "id": "debd7a08-7011-41a2-94ba-efd3d65b5bc5",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-normal-lung",
+      "right": "img-brd-lung"
+    },
+    "timestamp": "2026-01-08T12:43:24.895Z"
+  },
+  {
+    "id": "aa971a6c-b3bd-4af0-a1dc-72f7300b3e48",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-mastitis-udder",
+      "right": "img-normal-lung"
+    },
+    "timestamp": "2026-01-08T12:43:26.229Z"
+  },
+  {
+    "id": "5b5048a6-be5d-4ec0-b38a-589560953aca",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-normal-lung",
+      "right": "img-brd-lung"
+    },
+    "timestamp": "2026-01-08T12:43:27.473Z"
+  },
+  {
+    "id": "cfff7e1d-5d36-402b-82ac-5c745c1488e4",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-mastitis-udder",
+      "right": "img-normal-lung"
+    },
+    "timestamp": "2026-01-08T12:43:28.384Z"
+  },
+  {
+    "id": "5bc04958-a0de-469a-b923-8ddd12774773",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-mastitis-udder",
+      "right": "img-normal-lung"
+    },
+    "timestamp": "2026-01-08T12:43:41.148Z"
+  },
+  {
+    "id": "ff3fac05-fd02-4d53-9601-aeeb5a60fd49",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-normal-lung",
+      "right": "img-brd-lung"
+    },
+    "timestamp": "2026-01-08T12:43:46.828Z"
+  },
+  {
+    "id": "60ccdaee-576a-43ff-b57b-763eb15d0ea3",
+    "type": "IMAGE_COMPARE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "left": "img-mastitis-udder",
+      "right": "img-normal-lung"
+    },
+    "timestamp": "2026-01-08T12:43:48.131Z"
+  },
+  {
+    "id": "046d1a1e-9039-4702-9543-ee47a6ace362",
+    "type": "FILTER_USE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "filters": {
+        "search": "",
+        "species": "all",
+        "organ": "all",
+        "disease": "all",
+        "severity": "all",
+        "notifiableStatus": "all",
+        "startsWith": "B"
+      }
+    },
+    "timestamp": "2026-01-08T12:44:05.040Z"
+  },
+  {
+    "id": "c0b2f8fa-e4a4-4cf0-ae5d-6a4a04a10c5a",
+    "type": "FILTER_USE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "filters": {
+        "search": "",
+        "species": "all",
+        "organ": "all",
+        "disease": "all",
+        "severity": "all",
+        "notifiableStatus": "all",
+        "startsWith": ""
+      }
+    },
+    "timestamp": "2026-01-08T12:44:07.905Z"
+  },
+  {
+    "id": "6e1329f1-d4f0-4358-b9e3-110262fd0b0e",
+    "type": "FILTER_USE",
+    "userId": "user-admin-1",
+    "metadata": {
+      "filters": {
+        "search": "",
+        "species": "all",
+        "organ": "Lung",
+        "disease": "all",
+        "severity": "all",
+        "notifiableStatus": "all",
+        "startsWith": ""
+      }
+    },
+    "timestamp": "2026-01-08T12:44:13.291Z"
+  }
+]
